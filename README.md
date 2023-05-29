@@ -1,5 +1,7 @@
 # RAI CLI Docker image
 
+## :arrow_right: [Visit our Dockerhub](https://hub.docker.com/r/andremeireles/rai-cli/) :arrow_left:
+
 This image provides an Alpine image with [RAI CLI](https://github.com/RelationalAI/rai-cli) (from [RelationalAI](https://relational.ai/)) installed.
 
 ## Usage examples
