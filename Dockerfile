@@ -21,7 +21,7 @@ COPY --from=builder /go/rai-cli/build/rai .
 
 ENV PATH="$PATH:/home/rai/rai-cli"
 
-RUN echo 'rai $@ 2>&1 || { echo "ERROR: Failed on rai $@"; exit 1; }' > run-rai
+RUN echo 'rai "$@" 2>&1 || { echo "ERROR: Failed on rai $@"; exit 1; }' > run-rai
 
 ENTRYPOINT ["sh", "run-rai" ]
 CMD ["--help"]
